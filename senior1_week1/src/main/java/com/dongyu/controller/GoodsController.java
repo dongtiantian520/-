@@ -77,6 +77,7 @@ public class GoodsController {
 		Boolean is = Service.deleteAll(pids);
 		return is;
 	}
+//	创建一个分支
 	
 	
 
