@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dongyu.mapper.GoodsMapperDao" >
+	<select id="selectGoods" resultType="map" parameterType="map">
+		SELECT
+		*
+		FROM
+		tb_goods g
+		LEFT JOIN tb_brand b ON g.bid = b.bid
+		LEFT JOIN
+		tb_goodskind gk ON gk.gdid = g.gdid
+	</select>
+	<insert id="addGoods"  parameterType="com.dongyu.pojo.Goods" >
+		INSERT INTO `Tb_Goods` (
+		`gname`,
+		`gprice`,
+		`gdate`,
+		`bid`,
+		`gdid`
+		)
+		VALUES
+		(
+		#{gname},
+		#{gprice},
+		#{gdate},
+		#{bid},
+		#{gdid}
+		)
+
+	</insert>
+</mapper>
