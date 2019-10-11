@@ -61,7 +61,7 @@ public class GoodsController {
 //		为了安全,进行添加的方法
 		return "add";
 	}
-	@RequestMapping("toadd.do")
+	@RequestMapping("add.do")
 	public String add(Goods goods){
 //		执行添加方法 ,返回值是一个 int 类型
 		int i = Service.addGoods(goods);
