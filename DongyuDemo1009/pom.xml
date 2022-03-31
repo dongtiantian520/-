@@ -9,7 +9,7 @@
   <name>zhangsan-senior1-week1</name>
   <description>zhangsan's project </description>
   <properties>
-		<spring.version>4.3.24.RELEASE</spring.version>
+		<spring.version>5.3.18</spring.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
